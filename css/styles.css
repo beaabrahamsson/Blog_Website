@@ -1,0 +1,547 @@
+/*
+ * @Author: Beatrice Abrahamsson
+ * @Email: beaabrahamsson6@gmail.com
+ * @Date: 2022-03-16 12:59:02
+ * @Last Modified by: Beatrice Abrahamsson
+ * @Last Modified time: 2022-03-18 12:42:51
+ * @Description: Description
+ */
+
+/* Setting the font and color of the font for the body */
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: normal;
+    background-color: #fff3f2;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  
+/* Setting font and font-weight for logo*/
+  #logo {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Setting the background color for the navigation bar, setting overflow property to hidden*/
+.navbar {
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+    background-color: #793A38;
+    width: 100%;
+  }
+  /* Styling the links in the navigation bar*/
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  /* Setting a color for when you hover over the links in the navigation bar */
+  .navbar a:hover {
+    background-color:#8f4442;
+  }
+
+  /* setting float right to login link*/
+  #loginLink {
+      float: right;
+  }
+
+  /* styling welcome text*/
+  #welcome {
+      background-color: #8f4442;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+      color: white;
+  }
+
+  /* Styling login form*/
+    #login {
+    width: 25%;
+    margin: 50px;
+    }
+
+    /* Styling h2 in login form*/
+    #login h2 {
+        margin-left: 20px;
+    }
+
+    /* Styling inputs */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+    input[type=submit] {
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    background-color: #8f4442;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for button */
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  /* Styling the already user text*/
+  #alreadyuser {
+      margin-left: 20px;
+  }
+
+  #alreadyuser a {
+      display: inline-block;
+      text-decoration: none;
+      color: #793A38;
+  }
+
+  #alreadyuser p {
+    display: inline-block;
+}
+
+/* Styling article elements*/
+.article {
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .article h2 {
+      text-align: center;
+      font-size: xx-large;
+  }
+
+  /* Styling the buttons*/
+  .button {
+    text-decoration: none;
+    background-color: #8f4442;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+  }
+
+  button {
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+  }
+
+  /* Styling the edit and delete buttons*/
+  .editButtons {
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  .editButtons a{
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #8f4442;
+    color: white;
+    padding: 14px 20px;
+        
+  }
+
+  .editbuttons a:hover {
+    opacity: 0.8;
+  }
+
+  /* Add padding to containers */
+    .container {
+    padding: 20px;
+  }
+
+  /* Styling error messages*/
+.error {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: larger;
+  }
+
+/* Styling messages*/
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    font-size: larger;
+  }
+
+/* Styling the list of users*/
+.users {
+    margin-left: 30px;
+    width: 20%;
+    padding: 20px;
+    border-right: solid 1px #793A38;
+}
+
+.users a {
+    text-decoration: none;
+    color: black;
+}
+
+#hideUsers {
+  display: block;
+}
+
+/* Styling button to hide users*/
+#toggle {
+  background-color: #8f4442;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.flexbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling images*/
+img {
+border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 450px;
+}
+
+/* Styling the posted by text*/
+.postedBy {
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+}
+
+.postedBy p {
+    margin-right: 30px;
+}
+
+/* Styling username/logout button section*/
+#username {
+    width: 20%;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    float: right;
+  }
+
+/* Styling the delete user button*/
+#deleteUser {
+  margin-top: 30px;
+  width: 100%;
+}
+
+  /* Styling form for adding new post*/
+#new {
+    width: 65%;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+  }
+
+/* Styling inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type=file] {
+    padding: 20px;
+    border: #793A38 solid 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+  /* Styling content*/
+#content {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+  }
+/* Styling comments*/
+  .comment {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+  }
+
+  .comment p {
+      padding-top: 5px;
+  }
+
+  .comments {
+    width: 50%;
+    margin:auto;
+  }
+
+  /* Styling comment form*/
+  #commentForm {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #commentForm form {
+    width: 70%;
+  }
+
+  #commentForm #comment {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Styling button to show comment form*/
+  #toggleComments {
+    text-decoration: none;
+    background-color: #8f4442;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Styling read more links*/
+    .readmore a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #793A38;
+  }
+
+  /* Styling italics class*/
+  .italics {
+      font-style: italic;
+  }
+
+  /* Styling titles*/
+  .title {
+      text-decoration: none;
+      color: black;
+      font-size: x-large;
+  }
+
+  /* Styling blogpost*/
+  .blogpost {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .blogpost h2 {
+      text-align: center;
+      font-size: xx-large;
+  }
+/* Styling blogpost container*/
+  .post {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+  }
+
+  /* Styles for website counter container */
+.website-counter {
+    background-color: black;
+    height: 50px;
+    width: 80px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  /* Styling the footer, positioning and colors*/
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8f4442;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* Styling the links in the footer */
+  .footer a:link {
+    color: black;
+  }
+  
+  /* Adding color for when you hover over links */
+  .footer a:hover {
+    color: grey;
+  }
+  
+  /* Adding color for then you click on link */
+  .footer a:active {
+    color: rgb(20, 20, 124);
+  }
+
+  /* hide mobile menu when on desktop*/
+  .mobilemenu {
+      display: none;
+  }
+
+  /*Media querie for screens smaller than 768px (mobile och tablet)*/
+  @media only screen and (max-width: 992px) {
+
+    /* Hiding navigationbar*/
+    .navbar {
+        display: none;
+    }
+
+    /* Styling h1*/
+    h1 {
+        font-size: x-large;
+    }
+    /* Styling flexbox*/
+    .flexbox {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+/* Styling list of users*/
+    .users {
+        margin-left: 30px;
+        width: 90%;
+        padding: 20px;
+        border-right: none;
+        border-top: solid 1px #793A38;
+    }
+
+    /* Styling blogpost*/
+    .blogpost {
+        width: 90%;
+    }
+
+    /* Styling comment form*/
+    .commentForm {
+        width: 100%;
+    }
+
+    #commentForm form {
+      width: 100%;
+    }
+
+    /* Styling comments*/
+    .comments {
+        width: 90%;
+    }
+
+      /* Styling form for adding new post*/
+    #new {
+        width: 90%;
+        padding: 5px;
+    }
+
+    /* Styling username div */
+    #username {
+        float: none;
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+    /* Styling the mobile navigation menu */
+    .mobilemenu {
+    display: revert;
+    overflow: hidden;
+    background-color: #451716;
+    position: relative;
+    }
+  
+    /* Hiding the links inside the navigation menu (except for logo) */
+    .mobilemenu #links {
+      display: none;
+    }
+    
+    /* Styling navigation menu links */
+    .mobilemenu a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    /* Styling the hamburger menu */
+    .mobilemenu a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    /* Adding a grey background color when hovering */
+    .mobilemenu a:hover {
+      background-color: #8f4442;
+      color: white;
+    }
+    
+    /* Styling the logo */
+    .active {
+      background-color: #793A38;
+      color: white;
+    }
+
+    /* Styling images */
+    img {
+        width: 90%;
+    }
+
+    /* Styling container*/
+    .container {
+      width: 90%;
+    }
+
+    /* Styling login form*/
+    #login {
+      width: 90%;
+      margin: 10px;
+      }
+  }
